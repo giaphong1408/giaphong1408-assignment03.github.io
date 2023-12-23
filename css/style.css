@@ -240,9 +240,11 @@ li::marker {
   justify-content: start;
   padding-left: 12px;
 }
-
 #project table td {
   padding: 10px;
+}
+#project tr:first-child {
+  height: 123px;
 }
 .year {
   border: 1px solid var(---primary-color);
@@ -280,6 +282,23 @@ li::marker {
   #certificate .flex {
     flex-direction: column;
     padding: 0;
+  }
+
+   /* Project tablet */
+  #project .flex .flex {
+    display: block;
+  }
+  .year {
+    float: left;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  #project h5 {
+    height: 70px;
+  }
+  #project tr:nth-child(1) {
+    height: 280px;
   }
 }
 
@@ -325,6 +344,12 @@ li::marker {
   #certificate .border-left {
     border-left: none;
     padding: 0;
+  }
+  #certificate .flex {
+    flex-direction: column;
+  }
+  #certificate img {
+    width: 100%;
   }
 
   /* Project-mobile */
